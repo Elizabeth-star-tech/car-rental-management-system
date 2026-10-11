@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | DriveEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">DriveEasy Admin</a>
+    <nav class="simple-nav">
+      <a href="index.html">View website</a>
+    </nav>
+  </header>
+
+  <main class="admin-page">
+    <h1>Dashboard</h1>
+
+    <div id="stats" class="stats-grid"></div>
+
+    <h2>Fleet</h2>
+    <div class="table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Car</th>
+            <th>Type</th>
+            <th>Price per day</th>
+            <th>Seats</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="cars-table-body"></tbody>
+      </table>
+    </div>
+
+    <h2>Bookings</h2>
+    <p id="no-bookings" hidden>No bookings yet. Bookings made on the website will appear here.</p>
+    <div class="table-wrap" id="bookings-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Car</th>
+            <th>Pick-up</th>
+            <th>Return</th>
+            <th>Days</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookings-table-body"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy; 2026 DriveEasy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/cars.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

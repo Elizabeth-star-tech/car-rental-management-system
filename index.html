@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEasy Car Rental</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header class="navbar">
+  <a href="#home" class="logo">DriveEasy</a>
+
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">&#9776;</button>
+
+  <nav id="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#booking">Book Now</a>
+    <a href="#history">My Bookings</a>
+    <a href="#contact">Contact</a>
+    <a href="login.html" id="auth-link">Login</a>
+    <button id="theme-toggle" class="theme-toggle">Dark mode</button>
+  </nav>
+</header>
+
+
+<main>
+  <section id="home" class="hero">
+    <h1>Rent the right car for every trip</h1>
+    <p>Affordable daily rates. Book online in minutes.</p>
+    <a href="#cars" class="btn">Browse Cars</a>
+  </section>
+
+  <section id="cars">
+  <h2>Our Cars</h2>
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search by car name">
+   <select id="category-filter">
+  <option value="all">All types</option>
+  <option value="Sedan">Sedan</option>
+  <option value="SUV">SUV</option>
+  <option value="Hatchback">Hatchback</option>
+  <option value="Sports Car">Sports Car</option>
+  <option value="Van">Van</option>
+</select>
+<select id="price-filter">
+  <option value="all">Any price</option>
+  <option value="350">Up to $350</option>
+  <option value="500">Up to $500</option>
+  <option value="1000">Up to $1000</option>
+</select>
+  </div>
+
+  <p id="no-results" class="no-results" hidden>No cars match your search. Try changing the filters.</p>
+  <div id="car-grid" class="car-grid"></div>
+</section>
+
+ <section id="booking">
+  <h2>Book a Car</h2>
+
+  <form id="booking-form" novalidate>
+    <div class="form-group">
+      <label for="name">Full name</label>
+      <input type="text" id="name" placeholder="e.g. Jane Wanjiku">
+      <small class="error" id="name-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" placeholder="e.g. 0712345678">
+      <small class="error" id="phone-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="e.g. jane@example.com">
+      <small class="error" id="email-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="car">Choose a car</label>
+      <select id="car">
+        <option value="">Select a car</option>
+      </select>
+      <small class="error" id="car-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="pickup">Pick-up date</label>
+      <input type="date" id="pickup">
+      <small class="error" id="pickup-error"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="return">Return date</label>
+      <input type="date" id="return">
+      <small class="error" id="return-error"></small>
+    </div>
+
+    <button type="submit" class="btn">Submit booking request</button>
+  </form>
+
+  <p id="booking-success" class="success" hidden></p>
+</section>
+
+<section id="history">
+  <h2>My Bookings</h2>
+  <div id="history-list"></div>
+  <button id="clear-history" class="btn" hidden>Clear history</button>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="footer-content">
+    <div>
+      <h3>DriveEasy</h3>
+      <p>Reliable car rental for every trip.</p>
+    </div>
+
+    <div>
+      <h3>Contact us</h3>
+      <p>Phone: +254 716683756</p>
+      <p>Email: nangilae038@gmail.com</p>
+      <a href="admin.html">Admin dashboard</a>
+    </div>
+
+    <div>
+      <h3>Follow us</h3>
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </div>
+
+  <p class="copyright">&copy; 2026 DriveEasy. All rights reserved.</p>
+</footer>
+
+  <script src="js/cars.js"></script>
+  <script src="js/script.js"></script>
+</body>
+    
+</body>
+</html>

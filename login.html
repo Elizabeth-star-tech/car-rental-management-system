@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | DriveEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">DriveEasy</a>
+    <nav class="simple-nav">
+      <a href="index.html">Back to home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <div class="auth-box">
+
+        <div class="tabs">
+          <button type="button" class="tab active" id="tab-login">Login</button>
+          <button type="button" class="tab" id="tab-signup">Sign up</button>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="e.g. jane@example.com">
+            <small class="error" id="login-email-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Your password">
+            <small class="error" id="login-password-error"></small>
+          </div>
+
+          <button type="submit" class="btn">Log in</button>
+        </form>
+
+        <form id="signup-form" novalidate hidden>
+          <div class="form-group">
+            <label for="signup-name">Full name</label>
+            <input type="text" id="signup-name" placeholder="e.g. Jane Wanjiku">
+            <small class="error" id="signup-name-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="e.g. jane@example.com">
+            <small class="error" id="signup-email-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="At least 6 characters">
+            <small class="error" id="signup-password-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="signup-confirm">Confirm password</label>
+            <input type="password" id="signup-confirm" placeholder="Type the password again">
+            <small class="error" id="signup-confirm-error"></small>
+          </div>
+
+          <button type="submit" class="btn">Create account</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy; 2026 DriveEasy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

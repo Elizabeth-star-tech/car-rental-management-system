@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.navbar .logo {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: #1d3557;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 1rem;
+}
+
+.car-info ul {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.category {
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.price span {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.status.available {
+  background: #2a9d8f;
+}
+
+.status.booked {
+  background: #c1121f;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 1rem;
+}
+
+.car-info ul {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.category {
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.price span {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.status.available {
+  background: #2a9d8f;
+}
+
+.status.booked {
+  background: #c1121f;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.filters input,
+.filters select {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.no-results {
+  margin: 1rem 0;
+  color: #c1121f;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.filters input,
+.filters select {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.no-results {
+  margin: 1rem 0;
+  color: #c1121f;
+}
+
+#booking-form {
+  max-width: 600px;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error {
+  display: block;
+  min-height: 1.2rem;
+  margin-top: 0.3rem;
+  color: #c1121f;
+}
+
+#booking-form .btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.success {
+  max-width: 600px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #e6f4f1;
+  border: 1px solid #2a9d8f;
+  border-radius: 6px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 1.5rem;
+  text-align: left;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.copyright {
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Tablets and phones */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .navbar nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .navbar nav.open {
+    display: flex;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    padding: 0.7rem 0;
+    border-top: 1px solid #333;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  .car-card img {
+    height: 160px;
+  }
+}
+
+.history-item {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#clear-history {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  margin-left: 1.5rem;
+  padding: 0.3rem 0.9rem;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark .car-card,
+body.dark .history-item {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark .category,
+body.dark .price span {
+  color: #aaa;
+}
+
+body.dark .filters input,
+body.dark .filters select,
+body.dark .form-group input,
+body.dark .form-group select {
+  background: #1e1e1e;
+  color: #eee;
+  border-color: #444;
+}
+
+body.dark .success {
+  background: #12332e;
+}
+
+body.dark .navbar {
+  border-bottom: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .navbar nav .theme-toggle {
+    margin: 0.7rem 0 0;
+    align-self: flex-start;
+  }
+}
+
+.auth-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom-color: #e63946;
+  font-weight: bold;
+}
+
+.auth-box .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body.dark .auth-box {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark .tabs {
+  border-color: #333;
+}
+.admin-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.admin-page h1,
+.admin-page h2 {
+  margin: 1.5rem 0 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-left: 5px solid #e63946;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.admin-table th {
+  background: #f1f1f1;
+}
+
+.car-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.thumb {
+  width: 70px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  padding: 0.4rem 0.9rem;
+  background: #c1121f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #8f0e17;
+}
+
+body.dark .stat-card {
+  background: #1e1e1e;
+  border-color: #333;
+  border-left-color: #e63946;
+}
+
+body.dark .admin-table th {
+  background: #1e1e1e;
+}
+
+body.dark .admin-table th,
+body.dark .admin-table td {
+  border-color: #333;
+}
